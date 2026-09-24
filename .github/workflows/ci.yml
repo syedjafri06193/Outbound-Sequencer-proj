@@ -1,0 +1,47 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: v1
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-go@v5
+        with:
+          go-version: '1.24'
+
+      - name: gofmt
+        run: |
+          unformatted=$(gofmt -l .)
+          if [ -n "$unformatted" ]; then
+            echo "not gofmt'd:"
+            echo "$unformatted"
+            exit 1
+          fi
+
+      - name: go vet
+        run: go vet ./...
+
+      - name: build
+        run: go build ./...
+
+      # The race tests are the important ones. Race bugs that appear one
+      # time in fifty are exactly the ones that reach production, so they
+      # run every time and they run under -race.
+      - name: test
+        run: go test ./... -race -count=1
+
+      - name: the measurements
+        run: |
+          go test ./internal/sequence/ -run TestDocumentsOwn -v -count=1
+          go test ./internal/reply/ -run 'TestDocumentsOwnMatch|TestBodyMatchingWould' -v -count=1
+          go test ./internal/deliverability/ -run 'Spiral|Denominator' -v -count=1
+          go test ./test/races/ -run 'TestReplyBeats|TestSendTimeRecheck' -v -count=1

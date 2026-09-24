@@ -1,0 +1,7 @@
+Date,Spam Rate,Inboxed,Complaints,Domain Reputation,IP Reputation,DKIM Success Rate,SPF Success Rate,DMARC Success Rate
+2026-02-16,0.0002,9000,2,High,High,0.99,0.99,0.99
+2026-02-17,0.0002,8800,2,High,High,0.99,0.99,0.99
+2026-02-18,0.0003,7100,2,Medium,High,0.99,0.99,0.99
+2026-02-19,0.0004,5200,2,Medium,High,0.99,0.99,0.99
+2026-02-20,0.0006,3400,2,Low,Medium,0.99,0.99,0.99
+2026-02-21,0.0009,2200,2,Low,Medium,0.99,0.99,0.99
