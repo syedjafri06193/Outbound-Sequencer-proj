@@ -1,6 +1,6 @@
 # Notes on the spec
 
-Places where `Documentation/README.md` says something the implementation had
+Places where the design guide (`/docs/design.md` at the repo root) says something the implementation had
 to depart from, with the measurement that justified the departure. Everything
 here is reproducible from the test suite.
 

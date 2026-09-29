@@ -1,0 +1,13 @@
+# OS / editor clutter
+.DS_Store
+Thumbs.db
+*.swp
+.vscode/
+.idea/
+
+# Python
+__pycache__/
+*.pyc
+
+# Per-version build outputs are ignored in each vN/.gitignore
+.pytest_cache/
