@@ -536,7 +536,7 @@ func TestEnrollmentAdmissionAllowsAReasonableQueue(t *testing.T) {
 // implementation, which applies jitter as a final step after the window
 // check.
 //
-// Present only so the claim in docs/notes-on-the-spec.md is demonstrated
+// Present only so the claim in 1—Documentation/v1/notes-on-the-spec.md is demonstrated
 // rather than asserted.
 func docOrderNextSendTime(s *Scheduler, after time.Time, tz *time.Location, w model.Window) time.Time {
 	t := after.In(tz)

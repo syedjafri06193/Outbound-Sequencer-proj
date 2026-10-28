@@ -1,5 +1,7 @@
 # Outbound Sequencer
 
+[![CI](https://github.com/syedjafri06193/Outbound-Sequencer-proj/actions/workflows/ci.yml/badge.svg)](https://github.com/syedjafri06193/Outbound-Sequencer-proj/actions/workflows/ci.yml)
+
 A multichannel outbound sequencing engine in Go with deliverability
 guardrails, reply detection, and automatic pause when a meeting is booked.
 
@@ -38,15 +40,15 @@ CI runs gofmt, vet and the race-enabled tests on every push
 .
 ├── README.md          ← you are here
 ├── .github/workflows/ ← CI: gofmt, vet, tests with -race
-├── docs/
+├── 1—Documentation/   ← all documentation (index in its README)
 │   ├── design.md      ← full design guide (the spec code comments cite)
-│   └── design.pdf     ← same guide, PDF
+│   ├── design.pdf     ← same guide, PDF
+│   └── v1/            deliverability, legal, halt runbook, spec errata
 └── v1/                ← first implementation
     ├── cmd/           engine, postmaster-sync, replywatcher
     ├── internal/      deliverability, governance, jurisdiction, meeting, model,
     │                  ratelimit, reply, send, sequence, store, suppression, unsubscribe
-    ├── test/          race tests + Postmaster fixture
-    └── docs/          deliverability, legal, halt runbook, spec errata
+    └── test/          race tests + Postmaster fixture
 ```
 
 Each `vN/` directory is a self-contained iteration. Start with
@@ -62,3 +64,7 @@ Each `vN/` directory is a self-contained iteration. Start with
 | [v1](v1/) | Guardrail-first Go engine: complaint budget, warmup, jurisdiction gate, suppression, preflight, reply/meeting pause | — |
 
 Add a row per version as new iterations land.
+
+## Documentation
+
+All documentation lives in [`1—Documentation/`](1—Documentation/README.md) — start with its index.
