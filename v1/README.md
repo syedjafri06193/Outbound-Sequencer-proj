@@ -170,7 +170,7 @@ Four defects, measured rather than asserted — including a scheduler that
 fails the document's own property test 960 times in 1,000, and a reply
 matcher with three independent bugs. Plus one real bug the test suite found
 in this implementation. All in
-[docs/notes-on-the-spec.md](docs/notes-on-the-spec.md).
+[docs/notes-on-the-spec.md](../1—Documentation/v1/notes-on-the-spec.md).
 
 ## Not implemented
 
