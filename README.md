@@ -68,3 +68,37 @@ Add a row per version as new iterations land.
 ## Documentation
 
 All documentation lives in [`1—Documentation/`](1—Documentation/README.md) — start with its index.
+
+<!-- project-metrics:start -->
+## Project Metrics
+
+[![Stars](https://img.shields.io/github/stars/syedjafri06193/Outbound-Sequencer-proj?style=flat-square)](https://github.com/syedjafri06193/Outbound-Sequencer-proj/stargazers) [![Forks](https://img.shields.io/github/forks/syedjafri06193/Outbound-Sequencer-proj?style=flat-square)](https://github.com/syedjafri06193/Outbound-Sequencer-proj/forks) [![Open issues](https://img.shields.io/github/issues/syedjafri06193/Outbound-Sequencer-proj?style=flat-square)](https://github.com/syedjafri06193/Outbound-Sequencer-proj/issues) [![Last commit](https://img.shields.io/github/last-commit/syedjafri06193/Outbound-Sequencer-proj/improvements?style=flat-square)](https://github.com/syedjafri06193/Outbound-Sequencer-proj/commits/improvements) [![Commits](https://img.shields.io/github/commit-activity/t/syedjafri06193/Outbound-Sequencer-proj?style=flat-square)](https://github.com/syedjafri06193/Outbound-Sequencer-proj/commits/improvements) [![Top language](https://img.shields.io/github/languages/top/syedjafri06193/Outbound-Sequencer-proj?style=flat-square)](https://github.com/syedjafri06193/Outbound-Sequencer-proj) [![Repo size](https://img.shields.io/github/repo-size/syedjafri06193/Outbound-Sequencer-proj?style=flat-square)](https://github.com/syedjafri06193/Outbound-Sequencer-proj)
+
+### Code
+
+| Metric | Value |
+|---|---|
+| Lines of code | 6,209 |
+| Source files | 36 |
+| Tracked files | 50 |
+| Documentation | 9 Markdown files (15,913 words), 1 PDF |
+| Commits | 8 |
+| Contributors | 1 |
+| Active | 2026-09-11 → 2026-10-28 |
+
+| Language | Lines | Share |
+|---|---:|---:|
+| Go | 6,207 | 100.0% |
+| Modula-2 | 2 | 0.0% |
+
+### Performance
+
+| Metric | Result |
+|---|---|
+| Emails sent after prospect replied (500 trials) | 252 → ~80 → **0** |
+| Widest race window with enrolment lock | 400 µs |
+
+<sub>Measured figures recorded in [`v1/README.md`](v1/README.md).</sub>
+
+<sub>Code stats as of 2026-10-28, counted with pygount (comments and blank lines excluded). Badges update live.</sub>
+<!-- project-metrics:end -->
